@@ -1,6 +1,5 @@
-# Heading  Pub Crawl
 
-# Heading  Pub Crawl
+# Heading  Pub Crawl (Peeps&Pubs)
 
 ### Project #1 - Group
 UM/Trilogy - Full Stack Development Program University of Miami Cohort 2020
