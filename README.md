@@ -10,6 +10,7 @@ UM/Trilogy - Full Stack Development Program University of Miami Cohort 2020
 * Fidel Bello
 * Raquel Diaz
 * Nathan Walker
+* Tim Sherry
 
 ## **Peeps & Pubs**
 Project Description:
