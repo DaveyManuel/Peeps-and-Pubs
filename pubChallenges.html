@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Peeps Challenges!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Game Container -->
+	<div class="container">
+		<div id="start">
+			<h1>Peeps and Pubs Challenges</h1>
+			<h2>Winner takes all!.</h2>
+			<button id="startbtn">Start!</button>
+			<button id="highScoreView" onclick="showHighscore()">High scores</button>
+		</div>
+		<div id="game">
+			<div id="timer">time left: </div>
+			<div id="challenges"><p>Challenges PlaceHolder</p></div>
+			<button id= "a" onclick="checkResponse('a')">A</button>
+			<button id= "b" onclick="checkResponse('b')">B</button>
+			<button id= "c" onclick="checkResponse('c')">C</button>
+			<button id= "d" onclick="checkResponse('d')">D</button>
+			<div id="result"></div>
+		</div>
+		<div id="endGame">
+			<div id="finalScore"></div>
+			<input type="text" size="10" placeholder="Peep name here" name="initials" id="initials"/>
+			<button id= "submitScore">submit</button>
+		</div>
+		<div id="highScoreCont">
+			<div id= "highScorePage">
+				<div id="highScore-header">
+				<h3>Peep</h3>
+				<h3>Score</h3>
+				</div>
+			<div id="highScoreInitials"></div>
+			<div id="Score"></div>
+			</div>
+		<div id="endChallenge">
+			<button id="redo" onclick="replayChallenge()">LETS GO AGAIN!</button>
+			<button id="clear" onclick="clearScore()">Clear</button>
+		</div>
+		</div>
+    </div>
+    
+	<script src="./challengeScript.js"></script>
+</body>
+</html>
