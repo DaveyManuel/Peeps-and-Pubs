@@ -26,7 +26,7 @@ $( document ).ready(function() {
         emptyUnorderedList.empty();
 
     })
-
+    introJs().start();
     // End
 
 })
