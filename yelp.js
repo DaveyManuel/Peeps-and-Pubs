@@ -19,7 +19,18 @@ function yelpResults() {
         method: 'GET'
      }).then(function(response){
          console.log(response)
-     })  
+        //  $("#results").text(JSON.stringify(response));
+        $('#results').empty();
+        var name = response.businesses[0].name;
+        console.log(name)
+        $('#results').append(name);
+           }
+     )
+        
 }
 
+
 })
+
+
+
