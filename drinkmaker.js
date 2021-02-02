@@ -39,6 +39,7 @@ function generateVodka(response) {
 };
 
 $("#vodka").click(function (event) {
+    $(".vodkaGif").empty();
     $(".name").empty();
     $(".img").empty();
     $(".id").empty();
@@ -88,6 +89,7 @@ function generateGin(response) {
 };
 
 $("#gin").click(function (event) {
+    $(".ginGif").empty();
     $(".name2").empty();
     $(".img2").empty();
     $(".id2").empty();

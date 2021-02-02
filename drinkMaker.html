@@ -9,42 +9,42 @@
 </head>
 <body>
 
-<div class="container" id="main-container">
-    <div class="row">
-        <div class="col text-center">
-            <h1 class="display-1 text-white">Peeps and Pubs</h1>
-        </div>
-    </div>
-    <div class="row">
-        <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
-              <a class="nav-link" href="./welcomePage.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./drinkMaker.html">Drink Maker</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./shotRoulette.html">Shot Roulette</a>
-            </li>  
-            <li class="nav-item">
-              <a class="nav-link" href="./pubChallenge.html">Challenges</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./googleMapsYelp.html">Your Pub Crawl Route</a>
-            </li>
-          </ul>
-    </div>
+  <ul class="nav nav-pills nav-fill bg-dark">
+    <li class="nav-item">
+      <a class="nav-link" href="./welcomePage.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link bg-dark border border-3 border-warning" href="./drinkMaker.html">Drink Maker</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="./shotRoulette.html">Shot Roulette</a>
+    </li>  
+    <li class="nav-item">
+      <a class="nav-link" href="./pubChallenge.html">Challenges</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="./googleMapsYelp.html">Your Pub Crawl Route</a>
+    </li>
+  </ul>
 
-    <div class="row">
-        <div class="col text-center text-white">
-          <h1>Pick your poison!!!</h1>
+
+<div class="container" id="main-container">
+
+    <div class="row mt-5">
+        <div class="col-6 text-white">
+          <h1 class="fs-3">Don't worry, don't cry, drink Vodka, and fly</h1>
+        </div>
+        <div class="col-6 text-white">
+          <h1 class="fs-3">Gym? I thought you said Gin...</h1>
         </div>
     </div>
     <div class="row">
       <div class="col-5 text-white">
         <div class="card bg-dark">
-          <button type="button" class="btn btn-danger" id="vodka">Vodka</button>
-          <img src="https://media2.giphy.com/media/3ov9jLLdElad5apA88/source.gif" alt="">
+          <button type="button" class="btn btn-info fs-1" id="vodka">Vodka</button>
+          <div class="vodkaGif text-center">
+            <img src="https://media2.giphy.com/media/3ov9jLLdElad5apA88/source.gif" alt="" class="img-fluid mt-2">
+          </div>
           <div class="card-body">
             <div class="row">
               <div class="name"></div>
@@ -56,7 +56,6 @@
               </div>
             </div>
           </div>
-          <div class="id"></div>
           <div class="instructions"></div>  
         </div>
       </div>
@@ -64,12 +63,21 @@
       </div>
       <div class="col-5 text-white">
         <div class="card bg-dark">
-          <button type="button" class="btn btn-danger" id="gin">Gin</button>
-          <img src="https://media2.giphy.com/media/j4vPohwxoQIB9xY8ar/giphy.gif" alt="">
-          <div class="name2"></div>
-          <div class="img2"></div>
-          <div class="id2"></div>
-          <div class="ingredients2"></div>
+          <button type="button" class="btn btn-success fs-1" id="gin">Gin</button>
+          <div class="ginGif text-center">
+            <img src="https://media2.giphy.com/media/j4vPohwxoQIB9xY8ar/giphy.gif" alt="" class="img-fluid mt-4" height="300" width="300">
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="name2"></div>
+              <div class="col">
+                <div class="img2"></div>
+              </div>
+              <div class="col">
+                <div class="ingredients2"></div>
+              </div>
+            </div>
+          </div>
           <div class="instructions2"></div>
   
         </div>
