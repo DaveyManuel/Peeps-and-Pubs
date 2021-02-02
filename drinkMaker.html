@@ -9,13 +9,19 @@
 </head>
 <body>
 
-    <div class="container">
+<div class="container" id="main-container">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="display-1 text-white">Peeps and Pubs</h1>
+        </div>
+    </div>
+    <div class="row">
         <ul class="nav nav-pills nav-fill">
             <li class="nav-item">
               <a class="nav-link" href="./welcomePage.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./drinkMaker.html">Drink Maker</a>
+              <a class="nav-link active" href="./drinkMaker.html">Drink Maker</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./shotRoulette.html">Shot Roulette</a>
@@ -24,71 +30,61 @@
               <a class="nav-link" href="./pubChallenge.html">Challenges</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./googleMapsYelp.html">Your Pub Crawl Route</a>
+                <a class="nav-link" aria-current="page" href="./googleMapsYelp.html">Your Pub Crawl Route</a>
             </li>
-
           </ul>
+    </div>
 
-        <div class="row">
-            <div class="col">
-                <div class="card bg-dark text-white text-center">
-                    <div class="card-header">
-                        <h3>Drink Maker</h3>
-                        <p>Have some alcohol you're not sure what to do with? Write down what ingredients you have below and we will find the perfect cocktail recipe for you!</p>
-                        <div class="card-body">
-                            <input type="text" class="form-control mb-3" placeholder="Write ingredients here">
-                            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                                <ol class="carousel-indicators">
-                                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-                                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-                                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img src="https://bakingamoment.com/wp-content/uploads/2019/08/IMG_5823-moscow-mule.jpg" class="d-block w-100" alt="..." width="400" height="400">
-                                    <div class="carousel-caption d-none d-md-block">
-                                      <h5>First slide label</h5>
-                                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/5/28/1/KC0604H_Tequila-Sunrise_s4x3.jpg.rend.hgtvcom.826.620.suffix/1432831870492.jpeg" class="d-block w-100" alt="..." width="400" height="400">
-                                    <div class="carousel-caption d-none d-md-block">
-                                      <h5>Second slide label</h5>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item" >
-                                    <img src="https://wwd.com/wp-content/uploads/2018/06/polynesiancocktail.jpeg" class="d-block w-100" alt="..." width="400" height="400">
-                                    <div class="carousel-caption d-none d-md-block">
-                                      <h5>Third slide label</h5>
-                                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Next</span>
-                                </a>
-                              </div>
-    
-                        </div>
-                    </div>
-                </div>
+    <div class="row">
+        <div class="col text-center text-white">
+          <h1>Pick your poison!!!</h1>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-5 text-white">
+        <div class="card bg-dark">
+          <button type="button" class="btn btn-danger" id="vodka">Vodka</button>
+          <img src="https://media2.giphy.com/media/3ov9jLLdElad5apA88/source.gif" alt="">
+          <div class="card-body">
+            <div class="row">
+              <div class="name"></div>
+              <div class="col">
+                <div class="img"></div>
+              </div>
+              <div class="col">
+                <div class="ingredients"></div>
+              </div>
             </div>
+          </div>
+          <div class="id"></div>
+          <div class="instructions"></div>  
+        </div>
+      </div>
+      <div class="col-1">
+      </div>
+      <div class="col-5 text-white">
+        <div class="card bg-dark">
+          <button type="button" class="btn btn-danger" id="gin">Gin</button>
+          <img src="https://media2.giphy.com/media/j4vPohwxoQIB9xY8ar/giphy.gif" alt="">
+          <div class="name2"></div>
+          <div class="img2"></div>
+          <div class="id2"></div>
+          <div class="ingredients2"></div>
+          <div class="instructions2"></div>
+  
         </div>
 
+      </div>
+        
 
     </div>
+    
+</div>
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="drinkmaker.js"></script>
        
 </body>
 </html>
