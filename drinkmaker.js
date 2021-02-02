@@ -11,7 +11,7 @@ function generateVodka(response) {
         var vodkaName = $("<h1>");
         vodkaName.text("Get yourself a " + result.strDrink + "!!");
         $(".name").append(vodkaName);
-        var vodkaImg = $("<img>");
+        var vodkaImg = $("<img height='300' width='300'>");
         vodkaImg.attr('src', result.strDrinkThumb);
         $(".img").append(vodkaImg);
         var vodkaID = $("<p>");
@@ -59,20 +59,20 @@ function generateGin(response) {
         console.log(result)
         var ginName = $("<h1>");
         ginName.text("Get yourself a " + result.strDrink + "!!");
-        $(".name").append(ginName);
-        var ginImg = $("<img>");
+        $(".name2").append(ginName);
+        var ginImg = $("<img height='300' width='300'>");
         ginImg.attr('src', result.strDrinkThumb);
-        $(".img").append(ginImg);
+        $(".img2").append(ginImg);
         var ginID = $("<p>");
         ginID.text("Drink ID: " + result.idDrink);
-        $(".id").append(ginID);
+        $(".id2").append(ginID);
         $.ajax({
             url: "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + result.strDrink,
             method: "GET"
         }).then(function (response) {
         console.log(response);
         var drinkInstructions = response.drinks[0]
-        var ginIngredients = $("<ul>").appendTo(".ingredients");
+        var ginIngredients = $("<ul>").appendTo(".ingredients2");
         ginIngredients.append("<li>" + drinkInstructions.strMeasure1 + " " + drinkInstructions.strIngredient1 + "</li>");
         ginIngredients.append("<li>" + drinkInstructions.strMeasure2 + " " + drinkInstructions.strIngredient2 + "</li>");
         ginIngredients.append("<li>" + drinkInstructions.strMeasure3 + " " + drinkInstructions.strIngredient3 + "</li>");
@@ -81,17 +81,17 @@ function generateGin(response) {
         console.log(ginIngredients)
         var ginInstructions = $("<h2>");
         ginInstructions.text(drinkInstructions.strInstructions);
-        $(".instructions").append(ginInstructions);
+        $(".instructions2").append(ginInstructions);
         console.log(ginInstructions);
         });
     });
 };
 
 $("#gin").click(function (event) {
-    $(".name").empty();
-    $(".img").empty();
-    $(".id").empty();
-    $(".ingredients").empty();
-    $(".instructions").empty();
+    $(".name2").empty();
+    $(".img2").empty();
+    $(".id2").empty();
+    $(".ingredients2").empty();
+    $(".instructions2").empty();
     generateGin();
 });
