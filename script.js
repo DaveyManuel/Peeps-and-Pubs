@@ -2,7 +2,11 @@ $( document ).ready(function() {
 
     //Functionality for drinking buddies form on Welcome Page 
 
+<<<<<<< HEAD
     let input = $("#input")
+=======
+    let input = $("input")
+>>>>>>> main
     let emptyUnorderedList = $("#emptyList")
 
 
