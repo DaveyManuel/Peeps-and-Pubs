@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="custom_stylesheet.css">
-    <title>Shot Roulette</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./style.css" /> -->
+    <title>Document</title>
 </head>
+
 <body>
 
-    <div class="container">
+    <div class="container" id="main-container">
         <div class="row">
             <div class="col text-center">
                 <h1 class="display-1 text-white">Peeps and Pubs</h1>
@@ -24,26 +26,35 @@
                   <a class="nav-link" href="./drinkMaker.html">Drink Maker</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./shotRoulette.html">Shot Roulette</a>
+                    <a class="nav-link" href="./shotRoulette.html">Shot Roulette</a>
                 </li>  
                 <li class="nav-item">
                   <a class="nav-link" href="./pubChallenge.html">Challenges</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./googleMapsYelp.html">Your Pub Crawl Route</a>
+                    <a class="nav-link active" aria-current="page" href="./googleMapsYelp.html">Your Pub Crawl Route</a>
                 </li>
               </ul>
         </div>
-        <div>
-        <input type="button" value="spin" style="margin-left: 400px; margin-top: 50px;" id='spin'/>
-<canvas id="canvas" style="display: block; margin-left: auto; margin-right: auto;" width="500" height="500"></canvas>
-    </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6">Choose your liquor wisely!!!</div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <button type="button" class="btn btn-danger" id="vodka">Vodka</button>
+                <button type="button" class="btn btn-danger" id="gin">Gin</button>
+                <div class="name"></div>
+                <div class="img"></div>
+                <div class="id"></div>
+                <div class="instructions"></div>
+                <div class="ingredients"></div>
+            </div>
+
+            </div>
+        </div>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-   
+    <script src="drinkmaker.js"></script>
 </body>
-</html>
