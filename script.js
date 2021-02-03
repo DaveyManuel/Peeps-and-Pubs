@@ -36,7 +36,7 @@ $( document ).ready(function() {
 
 
 //these options can be changed
-var options = ["option1", "option2", "option3", "option4", "option5", "option6", "option7", "option8", "option9", "option10", "option11", "option12", "option13", "option14", "option15", "option16", "option17", "option18"];
+var options = ["Tallest", "Shortest", "Oldest", "Youngest", "Guys", "Chicks", "Everybody!", "Brown eyes", "Colored Eyes", "Foreigners", "25+", "Beer Drinkers", "Liquor Drinkers", "Wine Drinkers", "Graduates", "Never have I ever...", "iPhone users", "Android users"];
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
@@ -113,7 +113,7 @@ function drawRouletteWheel() {
     } 
 
     //Arrow
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "white";
     ctx.beginPath();
     ctx.moveTo(250 - 4, 250 - (outsideRadius + 5));
     ctx.lineTo(250 + 4, 250 - (outsideRadius + 5));
