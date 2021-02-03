@@ -1,7 +1,34 @@
 body {
-    /* background-image: url("https://cdn1.vectorstock.com/i/1000x1000/79/30/club-lights-background-spotlights-effect-vector-8827930.jpg"); */
 
-    background: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7));
+    /* background: linear-gradient(to right, rgb(59, 61, 59), rgb(7, 7, 7)); Gray to Black */
+    /* background: linear-gradient(to right, rgb(15, 43, 54), rgb(7, 7, 7)); Dark Cerulean to Black */
+    /* background: linear-gradient(to right, rgb(31, 1, 51), rgb(7, 7, 7)); Dark Purple to black */
+    /* background: linear-gradient(to right, rgb(39, 29, 1), rgb(7, 7, 7)); Mahongany to black */
+    background: linear-gradient(to right, rgb(1, 32, 27), rgb(7, 7, 7)); 
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Amatic SC', cursive;
+
+}
+
+#welcomePageHeader{
+    font-family: 'Dancing Script', cursive;
+
+}
+
+#enterBtn{
+
+        /* font-family: 'Amatic SC', cursive; */
+        font-family: 'Shadows Into Light', cursive;
+
+
+}
+
+.nav {
+    /* font-family: 'Shadows Into Light', cursive; */
+        font-family: 'Permanent Marker', cursive;
+
+
 }
 
 #headingOne {

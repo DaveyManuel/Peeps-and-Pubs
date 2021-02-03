@@ -24,30 +24,30 @@ var buttonD = document.getElementById("d");
 
 //challengeX and response array
 var theChallenges = [{
-    challengeX : 'Kiss a stranger? Dont be a creep, concent is requiered!',
+    challengeX : "Kiss a stranger! But don't be a creep, consent is required!",
     responseA : "PASS, TOO EASY!!!",
     responseB : "CHALLENGE COMPLETE",
     responseC: "BUT COVID!",
     responseD: "CHALLENGE REJECTED",
     correctResponse: "b"},
     {
-    challengeX: 'Start the ELECTRIC SLIDE, to any song playing (at least one other person must join!).',
+    challengeX: 'Start dancing the ELECTRIC SLIDE to the song that is currently playing, at least one other person must join!',
     responseA: "TOO EASY!",
-    responseB: "I DONT KNOW THE ELECTRIC SLIDE",
+    responseB: "I DON'T KNOW THE ELECTRIC SLIDE",
     responseC: "NO ONE JOINED",
-    responseD: "IM A CHICKEN $HIT!",
+    responseD: "I'M A CHICKEN $HIT!",
     correctResponse: "a"},
     {
-    challengeX: 'START A CHANT! DOESNT MATTER WHAT, JUST GET IT DONE(PEOPLE MUST! JOIN)',
+    challengeX: "START A CHANT (DOESN'T MATTER WHAT), AND GET PEOPLE TO JOIN!",
     responseA: "EHHHH...PASS!",
     responseB: "I NEED MORE BOOZE FOR THIS ONE",
     responseC: "TOO SHY, NOPE",
     responseD: "GOT IT!!!",
     correctResponse: "d"},
     {
-    challengeX: 'DANCE ON A TABLE OR ANY ELEVATED SURFACE FOR THE REMAINING TIME(plz dont die!)',
+    challengeX: 'DANCE ON A TABLE OR ANY ELEVATED SURFACE FOR THE REMAINING AMOUNT OF TIME!',
     responseA: "WHERE'S THE CHALLENGE FOOL!",
-    responseB: "I DONT WORK FOR FREE",
+    responseB: "I DON'T WORK FOR FREE",
     responseC: "Hell nah to the nah nah nah...",
     responseD: "Pero why? No thanks!",
     correctResponse: "a"},
@@ -95,7 +95,7 @@ function showScore(){
     gameoverDiv.style.display= "flex";
     clearInterval(timeInterval);
     highscoreInputName.value = "";
-    finalScoreEl.innerHTML = "You got completed " + score + " challenges out of " + theChallenges.length + " peep!";
+    finalScoreEl.innerHTML = "You completed " + score + " challenges out of " + theChallenges.length + "!";
 }
 
 // function to close the modal

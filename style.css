@@ -2,6 +2,11 @@ body{
     background: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7));
     height: 100%;
     width: 100%;
+    /* background: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7)); */
+    background: linear-gradient(to right, rgb(1, 32, 27), rgb(7, 7, 7)); 
+    font-family: 'Amatic SC', cursive;
+
+
 }
 li {
     list-style: none;
@@ -9,6 +14,12 @@ li {
 
 #modalPopUp{
     display: none;
+}
+
+.nav{
+       
+    font-family: 'Permanent Marker', cursive;
+
 }
 
 /* Start Display */
@@ -31,7 +42,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-family: monospace;
+    /* font-family: monospace; */
     margin-left: 20px;
     font-size: 30px;
     color: whitesmoke; 
@@ -41,7 +52,7 @@ h2 {
 
 #challenges {
     color: whitesmoke; 
-    font-family: monospace;
+    /* font-family: monospace; */
     text-align: center;
     font-size: 30px;
 }
@@ -61,7 +72,7 @@ h2 {
 
 
 button{
-    font-family: monospace;
+    /* font-family: monospace; */
     display: inline-block;
     border-radius: 10px;
     text-align: center;
