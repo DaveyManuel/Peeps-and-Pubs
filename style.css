@@ -16,7 +16,9 @@ h1 {
     font-family:  'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 55px;
-    color: whitesmoke; 
+    text-align:center;
+    color: black; 
+    padding-bottom: .9rem;
 }
 
 h2 {
@@ -24,19 +26,20 @@ h2 {
     font-family: monospace;
     margin-left: 20px;
     font-size: 30px;
-    color: whitesmoke;
+    color: black;
+    padding-bottom: .9rem;
 
 }
 
 #challenges {
-    color: whitesmoke;
+    color: black;
     font-family: monospace;
     text-align: center;
     font-size: 30px;
 }
 
 .container {
-    border-radius: 5rem;
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +48,7 @@ h2 {
     position: relative;
     width: 500px;
     height: 500px;
-    color: whitesmoke;
+    color: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7));
 }
 
 
@@ -55,9 +58,9 @@ button{
     border-radius: 10px;
     text-align: center;
     width: 200px;
-    margin-top: 3px;
+    margin-top: 10px;
     margin-left: 25px;
-    padding: 10px;
+    padding: 20px;
 }
 
 /* Hide Display */
