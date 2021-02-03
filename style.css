@@ -1,4 +1,7 @@
 body{
+    background: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7));
+    height: 100%;
+    width: 100%;
     /* background: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7)); */
     background: linear-gradient(to right, rgb(1, 32, 27), rgb(7, 7, 7)); 
     font-family: 'Amatic SC', cursive;
@@ -7,6 +10,10 @@ body{
 }
 li {
     list-style: none;
+}
+
+#modalPopUp{
+    display: none;
 }
 
 .nav{
@@ -24,6 +31,8 @@ li {
 
 h1 {
     /* font-family:  'Times New Roman', Times, serif; */
+    font-family: 'Noto Sans KR', sans-serif;
+
     font-weight: bold;
     font-size: 55px;
     text-align:center;
@@ -91,8 +100,10 @@ button{
     align-items: center;
     color: whitesmoke; 
 }
+
 #timer{
     /* font-family: monospace; */
+    font-family: 'Noto Sans KR', sans-serif;
     color:red;
     font-size: large;
     text-align: right;
@@ -109,6 +120,7 @@ button{
     margin: auto;
     color: whitesmoke; 
 }
+
 #highScoreCont{
     height: 100%;
     width: 100%;
