@@ -2,7 +2,8 @@ body{
     background: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7));
     /* background: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7)); */
     background: linear-gradient(to right, rgb(1, 32, 27), rgb(7, 7, 7)); 
-    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'Noto Sans KR', sans-serif;
     height: 800px;
 
 
@@ -17,7 +18,8 @@ li {
 
 .nav{
        
-    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
+    font-family: 'Noto Sans KR', sans-serif;
 
 }
 
@@ -64,6 +66,7 @@ h2 {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; ;
     margin: auto;
     position: relative;
+
     width: 500px;
     height: 500px;
     /* color: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7)); */

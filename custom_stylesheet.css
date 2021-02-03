@@ -7,26 +7,27 @@ body {
     background: linear-gradient(to right, rgb(1, 32, 27), rgb(7, 7, 7)); 
     /* font-family: 'Lobster', cursive; */
     /* font-family: 'Pacifico', cursive; */
-    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Amatic SC', cursive; */
+      font-family: 'Noto Sans KR', sans-serif;
 
 }
 
 #welcomePageHeader{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
 
 }
 
 #enterBtn{
 
         /* font-family: 'Amatic SC', cursive; */
-        font-family: 'Shadows Into Light', cursive;
+        font-family: 'Noto Sans KR', sans-serif;
 
 
 }
 
 .nav {
     /* font-family: 'Shadows Into Light', cursive; */
-        font-family: 'Permanent Marker', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
 
 
 }
