@@ -97,11 +97,18 @@ function showScore(){
     highscoreInputName.value = "";
     finalScoreEl.innerHTML = "You got completed " + score + " challenges out of " + theChallenges.length + " peep!";
 }
+
+// function to close the modal
+
+document.querySelector(".delete").addEventListener("click",function(){
+    document.getElementById("modalPopUp").style.display="none";
+})
+
 //on click for saving into the local storage.
 submitScoreBtn.addEventListener("click", function highscore(){
 
     if(highscoreInputName.value === "") {
-        alert("HEY PEEP! WHO TF ARE YOU? if you dont remember, its probably time to go home, join a meeting?, seek some help?. Byeeezzz!");
+        document.getElementById("modalPopUp").style.display="block";       
         return false;
     }else{
         var savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
