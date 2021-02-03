@@ -4,6 +4,24 @@ body {
     background: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7));
 }
 
+#headingOne {
+    background: none;
+    background-color: white;
+}
+#headingTwo {
+    background: none;
+    background-color: white;
+}
+#headingThree {
+    background: none;
+    background-color: white;
+}
+
+.accordion-body {
+    background: none;
+    background-color: white;
+}
+
 #dust{
     position: absolute;
     height: 100%;
