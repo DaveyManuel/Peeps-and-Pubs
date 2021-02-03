@@ -1,10 +1,9 @@
 body{
     background: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7));
-    height: 100%;
-    width: 100%;
     /* background: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7)); */
     background: linear-gradient(to right, rgb(1, 32, 27), rgb(7, 7, 7)); 
     font-family: 'Amatic SC', cursive;
+    height: 800px;
 
 
 }
