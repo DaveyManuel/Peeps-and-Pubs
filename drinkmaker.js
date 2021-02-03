@@ -24,11 +24,11 @@ function generateVodka(response) {
             console.log(response);
             var drinkInstructions = response.drinks[0]
             var vodkaIngredients = $("<ul>").appendTo(".ingredients");
-            vodkaIngredients.append("<li>" + drinkInstructions.strMeasure1 + " " + drinkInstructions.strIngredient1 + "</li>");
-            vodkaIngredients.append("<li>" + drinkInstructions.strMeasure2 + " " + drinkInstructions.strIngredient2 + "</li>");
-            vodkaIngredients.append("<li>" + drinkInstructions.strMeasure3 + " " + drinkInstructions.strIngredient3 + "</li>");
-            vodkaIngredients.append("<li>" + drinkInstructions.strMeasure4 + " " + drinkInstructions.strIngredient4 + "</li>");
-            vodkaIngredients.append("<li>" + drinkInstructions.strMeasure5 + " " + drinkInstructions.strIngredient5 + "</li>");
+            var i = 1
+            while (drinkInstructions["strMeasure" + i]) {
+                vodkaIngredients.append("<li>" + drinkInstructions["strMeasure" + i] + " " + drinkInstructions["strIngredient" + i] + "</li>");
+                i++
+            }
             console.log(vodkaIngredients)
             var vodkaInstructions = $("<h2>");
             vodkaInstructions.text(drinkInstructions.strInstructions);
@@ -74,11 +74,11 @@ function generateGin(response) {
         console.log(response);
         var drinkInstructions = response.drinks[0]
         var ginIngredients = $("<ul>").appendTo(".ingredients2");
-        ginIngredients.append("<li>" + drinkInstructions.strMeasure1 + " " + drinkInstructions.strIngredient1 + "</li>");
-        ginIngredients.append("<li>" + drinkInstructions.strMeasure2 + " " + drinkInstructions.strIngredient2 + "</li>");
-        ginIngredients.append("<li>" + drinkInstructions.strMeasure3 + " " + drinkInstructions.strIngredient3 + "</li>");
-        ginIngredients.append("<li>" + drinkInstructions.strMeasure4 + " " + drinkInstructions.strIngredient4 + "</li>");
-        ginIngredients.append("<li>" + drinkInstructions.strMeasure5 + " " + drinkInstructions.strIngredient5 + "</li>");
+        var i = 1
+        while (drinkInstructions["strMeasure" + i]) {
+            ginIngredients.append("<li>" + drinkInstructions["strMeasure" + i] + " " + drinkInstructions["strIngredient" + i] + "</li>");
+            i++
+        }
         console.log(ginIngredients)
         var ginInstructions = $("<h2>");
         ginInstructions.text(drinkInstructions.strInstructions);
