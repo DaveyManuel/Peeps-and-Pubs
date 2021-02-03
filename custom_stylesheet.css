@@ -22,8 +22,9 @@ body {
     background-color: white;
 }
 
-#tsparticles{
+#dust{
     position: absolute;
     height: 100%;
     width: 100%;
+    z-index: -1
 }
