@@ -1,5 +1,11 @@
 body {
-    background-image: url("https://cdn1.vectorstock.com/i/1000x1000/79/30/club-lights-background-spotlights-effect-vector-8827930.jpg");
+    /* background-image: url("https://cdn1.vectorstock.com/i/1000x1000/79/30/club-lights-background-spotlights-effect-vector-8827930.jpg"); */
 
     background: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7));
+}
+
+#tsparticles{
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
