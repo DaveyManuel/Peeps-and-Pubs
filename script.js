@@ -1,35 +1,35 @@
-$( document ).ready(function() {
+// $( document ).ready(function() {
 
-    //Functionality for drinking buddies form on Welcome Page 
+//     //Functionality for drinking buddies form on Welcome Page 
 
-    let input = $("#input")
-    let emptyUnorderedList = $("#emptyList")
+//     let input = $("#input")
+//     let emptyUnorderedList = $("#emptyList")
 
 
-    input.val(localStorage.getItem('drinkingbuddy'))
+//     input.val(localStorage.getItem('drinkingbuddy'))
 
-    console.log(input.val())
+//     console.log(input.val())
 
-    $("#submitBtn").on("click", function(){
+//     $("#submitBtn").on("click", function(){
 
-       localStorage.setItem('drinkingbuddy', input.val())
+//        localStorage.setItem('drinkingbuddy', input.val())
 
-       let value = input.val()
-       emptyUnorderedList.append('<li id="liValue">' + value + '</li>');
+//        let value = input.val()
+//        emptyUnorderedList.append('<li id="liValue">' + value + '</li>');
 
-       input.val('');
+//        input.val('');
 
-    })
+//     })
 
-    $("#clearBtn").on("click", function(){
+//     $("#clearBtn").on("click", function(){
 
-        emptyUnorderedList.empty();
+//         emptyUnorderedList.empty();
 
-    })
-    introJs().start();
-    // End
+//     })
+//     introJs().start();
+//     // End
 
-})
+// })
 
 
 //roullette wheel
