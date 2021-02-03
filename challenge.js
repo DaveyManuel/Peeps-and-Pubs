@@ -25,10 +25,10 @@ var buttonD = document.getElementById("d");
 //challengeX and response array
 var theChallenges = [{
     challengeX : 'Kiss a stranger? Dont be a creep, concent is requiered!',
-    responseA : "PASS!!!",
+    responseA : "PASS, TOO EASY!!!",
     responseB : "CHALLENGE COMPLETE",
     responseC: "BUT COVID!",
-    responseD: "REJECTED",
+    responseD: "CHALLENGE REJECTED",
     correctResponse: "b"},
     {
     challengeX: 'Start the ELECTRIC SLIDE, to any song playing (at least one other person must join!).',
@@ -55,7 +55,7 @@ var theChallenges = [{
     //global variables
     var finalChallengeI = theChallenges.length;
     var currentChallengeI = 0;
-    var timeLeft = 1000;
+    var timeRemaining = 1000;
     var timeInterval;
     var score = 0;
     var correct;
@@ -79,9 +79,9 @@ function startChallenge(){
     startChallengeDiv.style.display = "none";
     generateChallenge();
     timeInterval = setInterval(function(){
-        timeLeft--;
-        challengeTimer.textContent = "time left: " + timeLeft;
-        if(timeLeft <= 0) {
+        timeRemaining--;
+        challengeTimer.textContent = "TIME REMAINING: " + timeRemaining;
+        if(timeRemaining <= 0) {
             alert ("FAIL!!!")
             clearInterval(timeInterval);
             showScore();
@@ -156,7 +156,7 @@ function replayChallenge(){
     highscoreContainer.style.display = "none";
     gameoverDiv.style.display = "none";
     startChallengeDiv.style.display = "flex";
-    timeLeft = 1000;
+    timeRemaining = 1000;
     score = 0;
     currentChallengeI = 0;
 }
@@ -172,7 +172,7 @@ function checkResponse (answer){
     }else if(answer !==correct && currentChallengeI !== finalChallengeI){
         currentChallengeI++;
         generateChallenge();
-        timeLeft -=200
+        timeRemaining -=200
     }else{
         showScore();
     }
