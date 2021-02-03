@@ -1,8 +1,18 @@
 body{
-    background: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7));
+    /* background: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7)); */
+    background: linear-gradient(to right, rgb(1, 32, 27), rgb(7, 7, 7)); 
+    font-family: 'Amatic SC', cursive;
+
+
 }
 li {
     list-style: none;
+}
+
+.nav{
+       
+    font-family: 'Permanent Marker', cursive;
+
 }
 
 /* Start Display */
@@ -13,7 +23,7 @@ li {
 }
 
 h1 {
-    font-family:  'Times New Roman', Times, serif;
+    /* font-family:  'Times New Roman', Times, serif; */
     font-weight: bold;
     font-size: 55px;
     text-align:center;
@@ -23,7 +33,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-family: monospace;
+    /* font-family: monospace; */
     margin-left: 20px;
     font-size: 30px;
     color: whitesmoke; 
@@ -33,7 +43,7 @@ h2 {
 
 #challenges {
     color: whitesmoke; 
-    font-family: monospace;
+    /* font-family: monospace; */
     text-align: center;
     font-size: 30px;
 }
@@ -53,7 +63,7 @@ h2 {
 
 
 button{
-    font-family: monospace;
+    /* font-family: monospace; */
     display: inline-block;
     border-radius: 10px;
     text-align: center;
@@ -82,7 +92,7 @@ button{
     color: whitesmoke; 
 }
 #timer{
-    font-family: monospace;
+    /* font-family: monospace; */
     color:red;
     font-size: large;
     text-align: right;
