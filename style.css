@@ -59,14 +59,13 @@ h2 {
 }
 
 .container {
-   
+    
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; ;
     margin: auto;
     position: relative;
-
     width: 500px;
     height: 500px;
     /* color: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7)); */
@@ -161,4 +160,10 @@ button{
 #endChallenge{
     display: none;
     color: whitesmoke; 
+}
+#dust{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0
 }
