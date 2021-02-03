@@ -5,29 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="https://cdn.bootcdn.net/ajax/libs/intro.js/3.2.1/introjs.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dancing+Script:wght@500&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="custom_stylesheet.css">
     <title>Peeps and Pubs Virtual Party Room</title>
 </head>
 <body>
-
-
-    <!-- <ul class="nav nav-pills nav-fill bg-dark">
-        <li class="nav-item">
-          <a class="nav-link border border-3 border-warning" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./drinkMaker.html">Drink Maker</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="./shotRoulette.html">Shot Roulette</a>
-        </li>  
-        <li class="nav-item">
-          <a class="nav-link" href="./pubChallenge.html">Challenges</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="./googleMapsYelp.html">Your Pub Crawl Route</a>
-        </li>
-      </ul> -->
     
   <div id="dust"></div>
 
@@ -36,15 +19,13 @@
     <div class="container">
         <div class="row m-4">
             <div class="col text-center text-white">
-                <h1>Welcome to the Peeps</h1>
-                <h1>and Pubs</h1>
-                <h1>Virtual Party Room</h1>
-                <h2>Click below to enter</h2>
+                <h1 class="display-3" id="welcomePageHeader">Peeps and Pubs</h1>
+                <h1 id="welcomePageHeader">Virtual Party Room</h1>
             </div>
         </div>
         <div class="row">
           <div class="col text-center">
-            <button class="btn btn-dark"><a href="./googleMapsYelp.html">ENTER</a></button>
+            <button class="btn btn-dark btn-lg mt-3" id="enterBtn"><a href="./googleMapsYelp.html" class="text-decoration-none text-info">ENTER</a></button>
           </div>
         </div>
         <div class="row m-4">
@@ -60,211 +41,8 @@
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <!-- <script src="https://cdn.bootcdn.net/ajax/libs/intro.js/3.2.1/intro.js"></script> -->
  <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.16.1/dist/tsparticles.min.js"></script>
-  <!-- then include jquery wrapper -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery-particles@1.16.1/dist/jquery.particles.min.js"></script>
-  <script>
-    /* ---- tsParticles config ---- */
-    tsParticles.load("dust", {
-  backgroundMode: {
-    enable: true,
-    zIndex: 0
-  },
-  particles: {
-    number: {
-      value: 150,
-      density: {
-        enable: true,
-        value_area: 1500
-      }
-    },
-    color: {
-      value: "#ffffff"
-    },
-    shape: {
-      type: "image",
-      stroke: {
-        width: 0,
-        color: "#000000"
-      },
-      image: {
-        src: "./assets/PEEPS AND PUBS LOGO - WHITE.png",
-        width: 300,
-        height: 300
-      }
-    },
-    opacity: {
-      value: 0.4,
-      random: true,
-      anim: {
-        enable: true,
-        speed: 1,
-        opacity_min: 0.1,
-        sync: false
-      }
-    },
-    size: {
-      value: 15,
-      random: true,
-      anim: {
-        enable: true,
-        speed: 2,
-        size_min: 0.1,
-        sync: false
-      }
-    },
-    line_linked: {
-      enable: false
-    },
-    move: {
-      enable: true,
-      speed: 1,
-      direction: "none",
-      random: false,
-      straight: false,
-      out_mode: "out",
-      bounce: false,
-      attract: {
-        enable: false,
-        rotateX: 600,
-        rotateY: 1200
-      }
-    }
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: {
-        enable: false
-      },
-      onclick: {
-        enable: false
-      },
-      resize: false
-    }
-  },
-  retina_detect: true
-});
-
-    // tsParticles.load("tsparticles", {
-    //   fpsLimit: 60,
-    //   particles: {
-    //     number: {
-    //       value: 50,
-    //       density: {
-    //         enable: true,
-    //         value_area: 800
-    //       }
-    //     },
-    //     color: {
-    //       value: ["#2EB67D", "#ECB22E", "#E01E5B", "#36C5F0"]
-    //     },
-    //     shape: {
-    //       type: "image",
-    //       stroke: {
-    //         width: 0,
-    //         color: "#fff"
-    //       },
-    //       image: [{
-    //         src: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/poultry-leg_1f357.png",
-    //         width: 100,
-    //         height: 100
-    //       },
-    //       {
-    //         src: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/hot-beverage_2615.png",
-    //         width: 100,
-    //         height: 100
-    //       }, {
-    //         src: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/hamburger_1f354.png",
-    //         width: 100,
-    //         height: 100
-    //       },]
-    //     },
-    //     opacity: {
-    //       value: 1,
-    //       random: false,
-    //       anim: {
-    //         enable: false,
-    //         speed: 1,
-    //         opacity_min: 0.1,
-    //         sync: false
-    //       }
-    //     },
-    //     size: {
-    //       value: 20,
-    //       random: true,
-    //       anim: {
-    //         enable: false,
-    //         speed: 10,
-    //         size_min: 10,
-    //         sync: false
-    //       }
-    //     },
-    //     line_linked: {
-    //       enable: true,
-    //       distance: 150,
-    //       color: "#808080",
-    //       opacity: 0.4,
-    //       width: 1
-    //     },
-    //     move: {
-    //       enable: true,
-    //       speed: 5,
-    //       direction: "none",
-    //       random: false,
-    //       straight: false,
-    //       out_mode: "out",
-    //       bounce: false,
-    //       attract: {
-    //         enable: false,
-    //         rotateX: 600,
-    //         rotateY: 1200
-    //       }
-    //     }
-    //   },
-    //   interactivity: {
-    //     detect_on: "canvas",
-    //     events: {
-    //       onhover: {
-    //         enable: true,
-    //         mode: "grab"
-    //       },
-    //       onclick: {
-    //         enable: true,
-    //         mode: "push"
-    //       },
-    //       resize: true
-    //     },
-    //     modes: {
-    //       grab: {
-    //         distance: 140,
-    //         line_linked: {
-    //           opacity: 1
-    //         }
-    //       },
-    //       bubble: {
-    //         distance: 400,
-    //         size: 40,
-    //         duration: 2,
-    //         opacity: 8,
-    //         speed: 3
-    //       },
-    //       repulse: {
-    //         distance: 200,
-    //         duration: 0.4
-    //       },
-    //       push: {
-    //         particles_nb: 4
-    //       },
-    //       remove: {
-    //         particles_nb: 2
-    //       }
-    //     }
-    //   },
-    //   retina_detect: true
-    // });
-  </script>
-
+ <script src="https://cdn.jsdelivr.net/npm/jquery-particles@1.16.1/dist/jquery.particles.min.js"></script>
+ <script src="particles.js"></script>
 </body>
 </html>
