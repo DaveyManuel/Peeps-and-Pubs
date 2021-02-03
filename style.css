@@ -17,7 +17,7 @@ h1 {
     font-weight: bold;
     font-size: 55px;
     text-align:center;
-    color: black; 
+    color:whitesmoke; 
     padding-bottom: .9rem;
 }
 
@@ -26,13 +26,13 @@ h2 {
     font-family: monospace;
     margin-left: 20px;
     font-size: 30px;
-    color: black;
+    color: whitesmoke; 
     padding-bottom: .9rem;
 
 }
 
 #challenges {
-    color: black;
+    color: whitesmoke; 
     font-family: monospace;
     text-align: center;
     font-size: 30px;
@@ -48,7 +48,7 @@ h2 {
     position: relative;
     width: 500px;
     height: 500px;
-    color: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7));
+    /* color: linear-gradient(to right, rgb(61, 60, 59), rgb(7, 7, 7)); */
 }
 
 
@@ -66,10 +66,12 @@ button{
 /* Hide Display */
 #game {
     display: none;
+    color: whitesmoke; 
 }
 
 #result {
     display: none;
+    color: whitesmoke; 
 }
 
 #endGame {
@@ -77,12 +79,13 @@ button{
     display: none;
     flex-direction: column;
     align-items: center;
+    color: whitesmoke; 
 }
 #timer{
     font-family: monospace;
     color:red;
-    font-size: x-large;
-    text-align: center;
+    font-size: large;
+    text-align: right;
     position: absolute;
     top: 30px;
     right: 45px;
@@ -94,6 +97,7 @@ button{
     border-bottom-style: groove;
     padding-bottom: .3rem;
     margin: auto;
+    color: whitesmoke; 
 }
 #highScoreCont{
     height: 100%;
@@ -102,29 +106,35 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: whitesmoke; 
 }
 #highScore-header{
     display:flex;
     justify-content: space-around;
     border-bottom-style: outset;
     margin-bottom: .5rem;
+    color: whitesmoke; 
 }
 #Score{
     float: right;
     padding-right: 0;
     margin-right: 60px;
+    color: whitesmoke; 
 }
   
 #highScoreInitials{
     display: inline-block;
     margin-left: 60px;
+    color: whitesmoke; 
 }
 
 
 #highScorePage{
     display: none;
+    color: whitesmoke; 
 }
 
 #endChallenge{
     display: none;
+    color: whitesmoke; 
 }
