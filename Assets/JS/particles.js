@@ -22,7 +22,7 @@
               color: "#000000"
             },
             image: {
-              src: "./assets/images/PEEPS AND PUBS LOGO - WHITE.png",
+              src: "./Assets/images/PEEPS AND PUBS LOGO - WHITE.png",
               width: 300,
               height: 300
             }
