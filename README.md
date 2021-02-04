@@ -80,6 +80,6 @@ Yelp, The cocktail db ( The drink option).
 ![Movies   TV 2_4_2021 1_54_42 PM](https://user-images.githubusercontent.com/73322116/106941705-2e9b1900-66f1-11eb-85a8-f56838bf10a3.png)
 
 # deployed website
-please visit our application @ https://daveymanuel.github.io/Peeps-and-Pubs/
+please visit our application @ https://daveymanuel.github.io/Peeps-and-Pubs/ !
 
 # Copyright:  Hader Cortes, David Sanchez, Fidel Bello, Raquel Diaz, Nathan Walker 
