@@ -20,7 +20,7 @@ $(document).ready(function () {
         $.ajax({
             url: myurl,
             headers: {
-                'Authorization': 'Bearer 2UfANDN38WBYNZyFL-I3kts8Yujzp1kO47Wq1lz-U4j4dSEq6Bum8zHapdHF6rf7kYJniM87s4785v6sTnd5skp4yHlV91D0_o26wiwFRhDlCxhk2-UNZVAtlbgQYHYx',
+                'Authorization': 'Bearer JHzXTfD6zlstkmopDL52N7S_ssWxYOfjsz2xJS8rJXQdy7xOetHzHrtPNqMZE09XWDY9KcOHq9_VtIB6aeVDgjLW2SKVgmTGVpV9DpBz19m-NW1DwtbYZHTvmzUbYHYx',
             },
             method: 'GET'
         }).then(function (response) {
@@ -34,8 +34,8 @@ $(document).ready(function () {
 
             for (let i = 0; i < businessResults.length; i++) {
                 var name = businessResults[i].name
-                var image = $('<img>').attr("src", businessResults[i].image_url);
-                var site = $('<a>');
+                var image = $('<img class="img-fluid" height="300" width="300">').attr("src", businessResults[i].image_url);
+                var site = $('<a target="_blank">');
                 var siteLink = $(site).attr("href", businessResults[i].url).text('Visit this restaurant on Yelp!');
 
                 if (i === 0) {
