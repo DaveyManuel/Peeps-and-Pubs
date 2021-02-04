@@ -13,8 +13,8 @@ $(document).ready(function () {
         $('.accordion-button').empty(Text)
         $('.accordion-body').empty(Text)
 
-        $("#btnOne").empty();
-        $("#one").empty();
+        // $("#btnOne").empty();
+        // $("#one").empty();
 
     })
 
