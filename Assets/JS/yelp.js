@@ -26,12 +26,15 @@ $(document).ready(function () {
         }).then(function (response) {
             console.log(response)
             let myBuinesses = response.businesses;
+           
+            let businessResults = [];
 
             for (let i = 0; i < 3; i++) {
                 businessResults.push(myBuinesses[Math.floor(Math.random() * myBuinesses.length)]);
             }
+            
             console.log(businessResults);
-
+            
             for (let i = 0; i < businessResults.length; i++) {
                 var name = businessResults[i].name
                 var image = $('<img class="img-fluid" height="300" width="300">').attr("src", businessResults[i].image_url);
