@@ -22,9 +22,20 @@ And once there, if the conversation lacks, or the modd dampens, they'll be able 
 
 
 ## **Key Elements & Features
+
+Users can search local areas for bars and restaurants they might want to visit.
+
+Once there they can search for popular mixed drinks in case they dont know exactly what they want.
+
+They'll be able to participate in group games such as shot roulette or timed challenges that will keep them entertained and the night from ever getting dull. 
+
+ 
+
+## Future goals
+
 Customizable entertainment for all, in a localized area of your choosing, with the possibility of connecting with strangers whom share the same goal of having a good time. 
 
-The app in a global scale will also allow users to interact with other users for entertainment or personal experiences. 
+The app in a global scale will also allow users to interact with other users for entertainment or personal experiences.
 
 The app will be able to store the users Path from beginning to end, saving all visited locals and allowing for personalized review for further visit. 
 
