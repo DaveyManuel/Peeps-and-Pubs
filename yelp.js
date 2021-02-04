@@ -13,9 +13,6 @@ $(document).ready(function () {
         $('.accordion-button').empty(Text)
         $('.accordion-body').empty(Text)
 
-        // $("#btnOne").empty();
-        // $("#one").empty();
-
     })
 
     function yelpResults() {
@@ -23,8 +20,7 @@ $(document).ready(function () {
         $.ajax({
             url: myurl,
             headers: {
-                'Authorization': 'Bearer JHzXTfD6zlstkmopDL52N7S_ssWxYOfjsz2xJS8rJXQdy7xOetHzHrtPNqMZE09XWDY9KcOHq9_VtIB6aeVDgjLW2SKVgmTGVpV9DpBz19m-NW1DwtbYZHTvmzUbYHYx',
-                // might need to add another header "Missing required request header. Must specify one of: origin,x-requested-with"
+                'Authorization': 'Bearer 2UfANDN38WBYNZyFL-I3kts8Yujzp1kO47Wq1lz-U4j4dSEq6Bum8zHapdHF6rf7kYJniM87s4785v6sTnd5skp4yHlV91D0_o26wiwFRhDlCxhk2-UNZVAtlbgQYHYx',
             },
             method: 'GET'
         }).then(function (response) {
@@ -36,16 +32,11 @@ $(document).ready(function () {
             }
             console.log(businessResults);
 
-          
-
             for (let i = 0; i < businessResults.length; i++) {
-              
                 var name = businessResults[i].name
-                var image = $('<img class="img-fluid" height="300" width="300">').attr("src", businessResults[i].image_url);
-                var site = $('<a target="_blank">');
+                var image = $('<img>').attr("src", businessResults[i].image_url);
+                var site = $('<a>');
                 var siteLink = $(site).attr("href", businessResults[i].url).text('Visit this restaurant on Yelp!');
-
-               
 
                 if (i === 0) {
                     $("#btnOne").append(name);
@@ -57,18 +48,12 @@ $(document).ready(function () {
                     $('#two').append(image);
                     $('#two').append(siteLink);
 
-                } else if (i === 2){
+                } else {
                     $("#btnThree").append(name);
                     $('#three').append(image);
                     $('#three').append(siteLink);
                 }
-
-                // else {
-                //     $("#btnOne").empty();
-                //     $("#one").empty();
-                // }
             }
-
         })
     }
 })
