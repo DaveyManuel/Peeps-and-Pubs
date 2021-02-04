@@ -36,7 +36,7 @@
 
 
 //these options can be changed
-var options = ["Tallest", "Shortest", "Oldest", "Youngest", "Guys", "Chicks", "Everybody!", "Brown eyes", "Blue/Green Eyes", "Foreigners", "25+", "Beer Drinkers", "Liquor Drinkers", "Wine Drinkers", "Graduates", "Never have I ever...", "iPhone users", "Android users"];
+var options = ["Tallest", "Shortest", "Oldest", "Youngest", "Guys", "Chicks", "Everybody!", "Brown eyes", "Blue/Green Eyes", "Truth", "25+", "Dare", "Liquor Drinkers", "Truth", "Graduates", "Never have I ever...", "Dare", "Android users"];
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
