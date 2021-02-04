@@ -60,7 +60,6 @@ var theChallenges = [{
     var score = 0;
     var correct;
 
-    //fucntion to cycle through challengeX array and generate the theChallenges and answers
 function generateChallenge(){
     gameoverDiv.style.display = "none";
     if (currentChallengeI === finalChallengeI) {
@@ -73,7 +72,6 @@ function generateChallenge(){
     buttonC.innerHTML = currentChallenge.responseC;
     buttonD.innerHTML = currentChallenge.responseD;
 }; 
-//function to hide begin button displaying first game challengeX and also timer
 function startChallenge(){
     gameoverDiv.style.display = "none";
     startChallengeDiv.style.display = "none";
@@ -82,14 +80,12 @@ function startChallenge(){
         timeRemaining--;
         challengeTimer.textContent = "TIME REMAINING: " + timeRemaining;
         if(timeRemaining <= 0) {
-            alert ("FAIL!!!")
             clearInterval(timeInterval);
             showScore();
         }
     }, 1000);
     gameBody.style.display = "block";
 }
-// function that dipslays score after game or when timer is runs out
 function showScore(){
     gameBody.style.display= "none";
     gameoverDiv.style.display= "flex";
@@ -98,13 +94,11 @@ function showScore(){
     finalScoreEl.innerHTML = "You completed " + score + " challenges out of " + theChallenges.length + "!";
 }
 
-// function to close the modal
 
 document.querySelector(".delete").addEventListener("click",function(){
     document.getElementById("modalPopUp").style.display="none";
 })
 
-//on click for saving into the local storage.
 submitScoreBtn.addEventListener("click", function highscore(){
 
     if(highscoreInputName.value === "") {
@@ -127,7 +121,6 @@ submitScoreBtn.addEventListener("click", function highscore(){
         generateHighscore();
     }
 });
-//The function that generates saved score and sets it in high scores
 function generateHighscore (){
     highscoreDisplayName.innerHTML = "";
     highscoreDisplayScore.innerHTML = "";
@@ -142,7 +135,6 @@ function generateHighscore (){
     
 }
 };
-//displays  highscores
 function showHighscore(){
     startChallengeDiv.style.display = "none";
     gameoverDiv.style.style = "none";
@@ -152,13 +144,11 @@ function showHighscore(){
     generateHighscore();
 }
 
-//clears score and intitals
 function clearScore(){
     window.localStorage.clear();
     highscoreDisplayName.textContent = "";
     highscoreDisplayScore.textContent = "";
 }
-//function to redo the game
 function replayChallenge(){
     highscoreContainer.style.display = "none";
     gameoverDiv.style.display = "none";
@@ -168,7 +158,6 @@ function replayChallenge(){
     currentChallengeI = 0;
 }
 
-//function that checks success of current challenge, if failed it will remove 200 seconds from the timer
 function checkResponse (answer){
     correct = theChallenges[currentChallengeI].correctResponse;
 
@@ -186,5 +175,4 @@ function checkResponse (answer){
 };
 
 
-//added event listener to start quiz
 startChallengeBtn.addEventListener("click", startChallenge)
