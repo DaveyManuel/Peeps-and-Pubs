@@ -82,7 +82,6 @@ function startChallenge(){
         timeRemaining--;
         challengeTimer.textContent = "TIME REMAINING: " + timeRemaining;
         if(timeRemaining <= 0) {
-            alert ("FAIL!!!")
             clearInterval(timeInterval);
             showScore();
         }
