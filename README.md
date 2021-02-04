@@ -27,7 +27,7 @@ Users can search local areas for bars and restaurants they might want to visit.
 
 Once there they can search for popular mixed drinks in case they dont know exactly what they want.
 
-They'll be able to participate in group games such as shot roulette or timed challenges that will keep them entertained and the night from ever getting dull. 
+User's will be able to participate in group games such as shot roulette or timed challenges that will keep them entertained and the night from ever getting dull. 
 
  
 
@@ -42,10 +42,10 @@ The app will be able to store the users Path from beginning to end, saving all v
 The app will be able to capture the user's city selection, the amount of people they will be crawling with, and the locations that they want to crawl. The user can also select individual bars and build their own crawl.
 
 ## **Motivation:
-To create an interactive and affordable experience while getting to know local business. 
+To create an interactive  experience while getting to know local business of a selected area. 
 
 ## **Tech/Framework used:
-HTML, CSS, JavaScript, JQuery, AJAX, YELP API, Javascript, The cocktail db, //Firebase
+HTML, CSS, JavaScript, JQuery, AJAX, YELP API, Javascript, The cocktail db
 
 ## **New Technology Used:
 Bulma.io, Yelp, Javascript API
