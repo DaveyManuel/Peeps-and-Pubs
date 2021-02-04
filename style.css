@@ -110,8 +110,8 @@ button{
 
 #timer{
     /* font-family: monospace; */
-    /* font-family: 'Noto Sans KR', sans-serif; */
-    font-family: 'Lobster', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Lobster', cursive; */
     color:red;
     font-size: large;
     text-align: right;
