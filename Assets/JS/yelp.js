@@ -20,18 +20,21 @@ $(document).ready(function () {
         $.ajax({
             url: myurl,
             headers: {
-                'Authorization': 'Bearer 2UfANDN38WBYNZyFL-I3kts8Yujzp1kO47Wq1lz-U4j4dSEq6Bum8zHapdHF6rf7kYJniM87s4785v6sTnd5skp4yHlV91D0_o26wiwFRhDlCxhk2-UNZVAtlbgQYHYx',
+                'Authorization': 'Bearer JHzXTfD6zlstkmopDL52N7S_ssWxYOfjsz2xJS8rJXQdy7xOetHzHrtPNqMZE09XWDY9KcOHq9_VtIB6aeVDgjLW2SKVgmTGVpV9DpBz19m-NW1DwtbYZHTvmzUbYHYx',
             },
             method: 'GET'
         }).then(function (response) {
             console.log(response)
             let myBuinesses = response.businesses;
+           
+            let businessResults = [];
 
             for (let i = 0; i < 3; i++) {
                 businessResults.push(myBuinesses[Math.floor(Math.random() * myBuinesses.length)]);
             }
+            
             console.log(businessResults);
-
+            
             for (let i = 0; i < businessResults.length; i++) {
                 var name = businessResults[i].name
                 var image = $('<img>').attr("src", businessResults[i].image_url);
