@@ -1,0 +1,63 @@
+body {
+
+    /* background: linear-gradient(to right, rgb(59, 61, 59), rgb(7, 7, 7)); Gray to Black */
+    /* background: linear-gradient(to right, rgb(15, 43, 54), rgb(7, 7, 7)); Dark Cerulean to Black */
+    /* background: linear-gradient(to right, rgb(31, 1, 51), rgb(7, 7, 7)); Dark Purple to black */
+    /* background: linear-gradient(to right, rgb(39, 29, 1), rgb(7, 7, 7)); Mahongany to black */
+    background: linear-gradient(to right, rgb(1, 32, 27), rgb(7, 7, 7)); 
+    font-family: 'Lobster', cursive;
+    /* font-family: 'Pacifico', cursive; */
+    /* font-family: 'Amatic SC', cursive; */
+      /* font-family: 'Noto Sans KR', sans-serif; */
+
+}
+
+
+#welcomePageHeader{
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Lobster', cursive;
+
+}
+
+#enterBtn{
+
+        /* font-family: 'Amatic SC', cursive; */
+        /* font-family: 'Noto Sans KR', sans-serif; */
+        font-family: 'Lobster', cursive;
+
+
+}
+
+.nav {
+    /* font-family: 'Shadows Into Light', cursive; */
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Lobster', cursive;
+    
+
+
+}
+
+#headingOne {
+    background: none;
+    background-color: white;
+}
+#headingTwo {
+    background: none;
+    background-color: white;
+}
+#headingThree {
+    background: none;
+    background-color: white;
+}
+
+.accordion-body {
+    background: none;
+    background-color: white;
+}
+
+#dust{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1
+}
