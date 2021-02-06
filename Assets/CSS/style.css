@@ -63,7 +63,7 @@ h2 {
     margin: auto;
     position: relative;
     width: 500px;
-    height: 500px;
+    height: 400px;
    
 }
 
@@ -112,6 +112,7 @@ button{
 #highScorePage{
     display: none;
     width: 50%;
+    height: 50%;
     border-bottom-style: groove;
     padding-bottom: .3rem;
     margin: auto;
@@ -119,7 +120,7 @@ button{
 }
 
 #highScoreCont{
-    height: 100%;
+    height: 50%;
     width: 100%;
     display: none;
     flex-direction: column;
